@@ -1,0 +1,600 @@
+/* loading font*/
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url("century-gothic/CenturyGothic.ttf");
+}
+
+
+/* general definition */
+
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: "CenturyGothic";
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*###########################################################
+#############################################################
+#############################################################
+#############################################################
+
+/* Navigation */
+
+.custom_navigation {
+    width: 100vw;
+    height: 9vh;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 10px rgba(0, 233, 34, 1);
+}
+
+
+/*  Logo */
+
+.custom_navigation>.custom_nav_logo {
+    width: 38%;
+    height: inherit;
+    float: left;
+}
+
+.custom_nav_logo img {
+    width: 25%;
+    height: auto;
+    filter: drop-shadow(0px 2px 5px rgb(0, 233, 34));
+    margin-left: 8vw;
+}
+
+
+/*  Searchbar */
+
+.custom_navigation>.custom_nav_search_container {
+    display: flex;
+    width: 20%;
+    height: inherit;
+    float: left;
+}
+
+#custom_nav_search_input {
+    position: relative;
+    margin-top: auto;
+    font-family: "CenturyGothic";
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 40em;
+    background-color: rgb(172);
+    font-size: 0.7em;
+    height: 3.5em;
+    transition: 0s ease-in-out;
+    width: 100%;
+    text-align: center;
+    margin: 12px 0 0 0;
+}
+
+
+/* Navigation Buttons right  */
+
+.custom_navigation>.custom_button_container {
+    float: right;
+    width: 40%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.custom_button_container>.custom_nav_button_2 {
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 12px 10px 0 0;
+    margin-bottom: 0;
+}
+
+.custom_nav_button button {
+    font-family: "CenturyGothic";
+    float: left;
+    margin: 2px;
+}
+
+.custom_hochladen_button {
+    border-radius: 6px;
+    display: block;
+    width: 190px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    padding: auto;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom_hochladen_button:hover {
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+}
+
+.custom_anmelden_button {
+    border-radius: 6px;
+    display: block;
+    height: 40px;
+    width: 190px;
+    border: none;
+    background-color: #00d700;
+    color: white;
+    padding: auto;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom_anmelden_button:hover {
+    background-color: #008207;
+    color: rgb(0, 0, 0);
+}
+
+
+/*######################################################
+########################################################
+########################################################
+
+
+/* Main Body under navigation */
+
+.custom_body {
+    position: relative;
+    display: flex;
+    width: 90vw;
+    height: 89vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+
+/* Main container left */
+
+.custom_body_links {
+    flex-direction: column;
+    display: flex;
+    width: 450px;
+    overflow-y: scroll;
+    padding: 10px;
+    float: bottom;
+}
+
+
+/*  Small boxes in main container left */
+
+.custom_body_links_box {
+    color: rgb(237, 237, 228);
+    box-shadow: 0 3px 2px -2px rgba(0, 255, 34, 1);
+    padding: 20px;
+    font-size: small;
+    margin: 20px;
+}
+
+.custom_body_links_box a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_body_links_box a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_body_links_box a:hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_body_links_box a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.custom_others {
+    float: left;
+    width: 350px;
+    height: 50px;
+    margin: 5px;
+}
+
+.custom_others :hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_other_users {
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 12px;
+}
+
+.custom_other_users a {
+    font-size: small;
+    margin: 20px;
+}
+
+.custom_other_users a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_other_users a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_other_users a:hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_other_users a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/*Info Links on the left side*/
+
+.custom_small_link {
+    font-size: small;
+    margin: 20px;
+}
+
+.custom_small_link a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_small_link a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_small_link a:hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_small_link a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_other_realname {
+    font-weight: lighter;
+    font-size: 10px;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 14px;
+}
+
+.custom_other_users_picture {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.custom_other_users_picture img {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    box-shadow: 0 1px 1px rgba(0, 233, 34, 1);
+}
+
+
+/*  links inside small container on the left side */
+
+.custom_small_link {
+    font-size: small;
+    margin: 20px;
+}
+
+.custom_small_link a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_small_link a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_small_link a:hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_small_link a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/*  Buttons in container on the left */
+
+.custom_button_2 {
+    font-family: "CenturyGothic";
+    font-weight: 800;
+    display: block;
+    width: 93%;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    background-color: rgb(237, 237, 228);
+    color: #000000;
+    padding: auto;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: left;
+    margin: 5px;
+}
+
+.custom_button_2:hover {
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+}
+
+.custom_smallicon {
+    width: 25px;
+}
+
+
+/*  Login button in container on the left */
+
+.custom_button_3 {
+    font-family: "CenturyGothic";
+    width: 93%;
+    height: 60px;
+    border-radius: 6px;
+    display: block;
+    border: none;
+    background-color: #00d700;
+    color: white;
+    padding: auto;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom_button_3:hover {
+    background-color: #008207;
+    color: rgb(0, 0, 0);
+}
+
+
+/*  Main container on the right */
+
+.custom_body_rechts {
+    overflow-y: scroll;
+    width: 900px;
+    flex-direction: row;
+}
+
+.custom_top_1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    /* Picture of the users*/
+}
+
+.custom_user_picture_box {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.custom_user_picture {
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+    box-shadow: 0 2px 3px rgba(0, 233, 34, 0.6);
+}
+
+.custom_user_picture img {
+    width: 75px;
+    border-radius: 50%;
+    height: 75px;
+}
+
+.custom_content_info {
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+.custom_nickname {
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    float: left;
+    width: auto;
+    height: 15px;
+    color: rgb(237, 237, 228);
+}
+
+.custom_nickname a {
+    font-size: big;
+    margin: 20px;
+}
+
+.custom_nickname a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_nickname a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_nickname a:hover {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_nickname a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom_realname {
+    font-weight: lighter;
+    font-size: 13px;
+    float: left;
+    margin-top: 15px;
+    width: auto;
+    height: 15px;
+    color: rgb(237, 237, 228);
+}
+
+.custom_tags {
+    padding: 10px;
+    font-weight: light;
+    font-size: 18px;
+    float: left;
+    width: 400px;
+    height: 100px;
+    color: rgb(237, 237, 228);
+}
+
+.custom_tags_right {
+    font-size: 13px;
+}
+
+.custom_tags a:link {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_tags a:visited {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_tags a:hover {
+    color: rgb(192, 192, 192);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.custom__tags a:active {
+    color: rgb(237, 237, 228);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.custom_follow_1 {
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.custom_followbutton_1 {
+    font-family: "CenturyGothic";
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(212, 212, 212);
+    background-color: rgb(237, 237, 228);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom_followbutton_1:hover {
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+}
+
+.custom_top_2 {
+    float: left;
+    width: 90%;
+    height: 600px;
+    box-shadow: 0 3px 5px -4px rgba(0, 233, 34, 0.3);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.custom_video_box {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-left: 65px;
+}
+
+.custom_video_buttons {
+    float: left;
+    width: 100px;
+    height: 260px;
+    margin-top: 350px;
+    margin-left: 40px;
+}
+
+.custom_video_button {
+    height: 60px;
+    width: 60px;
+    border-color: #008207;
+    border-radius: 50%;
+    margin-top: 10%;
+    border: none;
+    background-color: rgb(237, 237, 228);
+}
+
+.custom_video_button:hover {
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+}
